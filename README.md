@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-# food_app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
 # Hunger Box
 Hunger Box is an innovative mobile application developed with Flutter and Firebase, designed to streamline the process of food ordering and delivery. Whether you're craving a quick bite or planning a meal with friends, Hunger Box offers a seamless and efficient way to explore menus, place orders, and track deliveries—all from the convenience of your mobile device.
 
