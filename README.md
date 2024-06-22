@@ -5,8 +5,8 @@ Hunger Box is an innovative mobile application developed with Flutter and Fireba
 1. User Authentication and Security
 Hunger Box prioritizes user security with Firebase Authentication, ensuring a safe and reliable login and registration process. Users can create accounts securely and manage their profiles with ease.
 
-2. Real-time Order Tracking
-Experience real-time updates on your orders and delivery status. From confirmation to doorstep delivery, Hunger Box keeps you informed every step of the way, enhancing transparency and reliability.
+3. Real-time GeoLocator
+Experience real-time GeoLocator for automatic delivery address access using Geolocator APIs.
 
 3. Dynamic Menu Exploration
 Discover a diverse range of dishes and cuisines with Hunger Box’s customizable menu interface. Users can browse through curated selections, filter by preferences, and view detailed descriptions and images to make informed choices.
