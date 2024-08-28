@@ -23,4 +23,4 @@ Built with Flutter, Hunger Box offers a responsive and visually appealing interf
 Technologies Used:
 Flutter: Google’s UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.
 Firebase: Google's mobile platform for developing high-quality apps, including Firestore for real-time NoSQL database, Firebase Authentication for user management, and Firebase Storage for storing user-generated content.
->>>>>>> 085920e98418830c3026ae543a0c1c9a1b03b4de
+
