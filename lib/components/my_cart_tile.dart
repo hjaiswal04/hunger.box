@@ -7,7 +7,7 @@ import 'package:provider/provider.dart';
 class MyCartTile extends StatelessWidget {
   final CartItem cartItem;
 
-  const MyCartTile({Key? key, required this.cartItem}) : super(key: key);
+  const MyCartTile({super.key, required this.cartItem});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class MyCartTile extends StatelessWidget {
             color: Theme.of(context).colorScheme.secondary,
             borderRadius: BorderRadius.circular(8),
           ),
-          margin: EdgeInsets.symmetric(horizontal: 25, vertical: 25),
+          margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -43,14 +43,14 @@ class MyCartTile extends StatelessWidget {
                         children: [
                           Text(
                             cartItem.food.name,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.bold,
                             ),
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                           ),
                           Text(
-                            '\₹${cartItem.food.price.toString()}',
+                            '₹${cartItem.food.price.toString()}',
                             style: TextStyle(
                               color: Theme.of(context).colorScheme.primary,
                             ),
@@ -83,9 +83,9 @@ class MyCartTile extends StatelessWidget {
                           label: Row(
                             children: [
                               Text(addon.name),
-                              SizedBox(width: 4),
+                              const SizedBox(width: 4),
                               Text(
-                                '(\₹${addon.price.toStringAsFixed(2)})',
+                                '(₹${addon.price.toStringAsFixed(2)})',
                                 style: TextStyle(
                                   color: Theme.of(context)
                                       .colorScheme

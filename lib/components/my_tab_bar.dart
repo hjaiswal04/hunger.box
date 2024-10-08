@@ -16,26 +16,13 @@ class MyTabBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: TabBar(controller: tabController, tabs: const [
-        //first tab
-        Tab(
-          text: "Burger",
-        ),
-        //second tab
-        Tab(
-          text: "Salads",
-        ),
-        //third tab
-        Tab(
-          text: "Sides",
-        ),
-        Tab(
-          text: "Cakes",
-        ),
-        Tab(
-          text: "Drinks",
-        ),
-      ]),
+      child: TabBar(
+        controller: tabController,
+        tabs: _buildCategoryTabs(),
+        indicatorColor: Theme.of(context).colorScheme.inversePrimary,
+        labelColor: Theme.of(context).colorScheme.inversePrimary, // Color for selected tab
+        unselectedLabelColor: Theme.of(context).colorScheme.primary // Color for unselected tabs
+      ),
     );
   }
 }

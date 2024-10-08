@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/components/my_drawer_tile.dart';
 import 'package:food_app/pages/login_page.dart';
-import 'package:food_app/pages/register_page.dart';
 import 'package:food_app/pages/settings_page.dart';
 import 'package:food_app/services/auth/auth_service.dart';
-import 'package:food_app/themes/theme_provider.dart';
 
 class MyDrawer extends StatefulWidget {
   const MyDrawer({super.key});
@@ -67,7 +65,7 @@ class _MyDrawerState extends State<MyDrawer> {
             text: "LOGOUT",
             icon: Icons.logout,
             onTap: () {
-              /*Navigator.pop(context);
+              Navigator.pop(context);
               Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -76,7 +74,7 @@ class _MyDrawerState extends State<MyDrawer> {
                             Navigator.pop(context);
                           },
                         )),
-              );*/
+              );
             },
           ),
         ],

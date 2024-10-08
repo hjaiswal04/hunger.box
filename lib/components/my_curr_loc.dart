@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:geocoding/geocoding.dart';
 
 class MyCurrentLocation extends StatefulWidget {
-  const MyCurrentLocation({Key? key}) : super(key: key);
+  const MyCurrentLocation({super.key});
 
   @override
   State<MyCurrentLocation> createState() => _MyCurrentLocationState();
@@ -24,12 +23,12 @@ class _MyCurrentLocationState extends State<MyCurrentLocation> {
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
-          title: Text("Error"),
-          content: Text("Failed to fetch location. Please try again."),
+          title: const Text("Error"),
+          content: const Text("Failed to fetch location. Please try again."),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: Text('OK'),
+              child: const Text('OK'),
             ),
           ],
         ),

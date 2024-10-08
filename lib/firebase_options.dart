@@ -25,8 +25,8 @@ class DefaultFirebaseOptions {
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
-      case TargetPlatform.iOS:
-        return ios;
+      //case TargetPlatform.iOS:
+        //return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -57,12 +57,12 @@ class DefaultFirebaseOptions {
     storageBucket: 'hunger-box-f9f6c.appspot.com',
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
+  /*static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCheKjnkkoBxcNE9Ew-cTZ-9CCSm38YjJQ',
     appId: '1:2983176440:ios:836a0d8985c47be563f30d',
     messagingSenderId: '2983176440',
     projectId: 'hunger-box-f9f6c',
     storageBucket: 'hunger-box-f9f6c.appspot.com',
     iosBundleId: 'com.example.foodApp',
-  );
+  );*/
 }

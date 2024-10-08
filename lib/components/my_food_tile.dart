@@ -5,7 +5,7 @@ class MyFoodTile extends StatelessWidget {
   final Food food;
   final void Function()? onTap;
 
-  MyFoodTile({
+  const MyFoodTile({
     super.key,
     required this.food,
     this.onTap,
@@ -37,7 +37,7 @@ class MyFoodTile extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 4),
+                        const SizedBox(height: 4),
                         Text(
                           '₹${food.price.toString()}',
                           style: TextStyle(

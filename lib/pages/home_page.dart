@@ -20,7 +20,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  List<Food> fullMenu = []; // Assuming fullMenu is a class member
+  List<Food> fullMenu = [];
 
   @override
   void initState() {
@@ -41,24 +41,21 @@ class _HomePageState extends State<HomePage>
 
   List<Widget> getFoodInThisCategory(List<Food> fullMenu) {
     return FoodCategory.values.map((category) {
-      //get category menu
       List<Food> categoryMenu = _filterMenuByCategory(category, fullMenu);
-      print('Category: $category, Items: ${categoryMenu.length}');
       return ListView.builder(
-        key: Key(category.toString()), // Unique key for each ListView
+        key: Key(category.toString()),
         itemCount: categoryMenu.length,
         physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) {
-          //get individual food
           final food = categoryMenu[index];
-          //return food tile ui
           return MyFoodTile(
               food: food,
               onTap: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => FoodPage(food: food),));
+                      builder: (context) => FoodPage(food: food),
+                    ));
               });
         },
       );
@@ -91,9 +88,7 @@ class _HomePageState extends State<HomePage>
         ],
         body: Consumer<Restaurants>(
           builder: (context, restaurant, child) {
-            // Assign menu data from the Restaurants model to fullMenu
             fullMenu = restaurant.menu;
-            // Now fullMenu should contain the menu data
             return TabBarView(
               controller: _tabController,
               children: getFoodInThisCategory(fullMenu),

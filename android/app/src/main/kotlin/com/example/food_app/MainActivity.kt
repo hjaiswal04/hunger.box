@@ -1,5 +1,6 @@
-package com.example.food_app
+package com.hungerbox.app
 
 import io.flutter.embedding.android.FlutterActivity
 
-class MainActivity: FlutterActivity()
+class MainActivity: FlutterActivity() {
+}
